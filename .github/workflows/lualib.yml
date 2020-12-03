@@ -29,7 +29,7 @@ jobs:
         
       - name: Generate Lua Bundle
         run: |
-          rbxtsc --rojo luaproject.json
+          rbxtsc --rojo luaproject.json --type=package
           
       - name: Copy files to LuaLib branch
         run: |
